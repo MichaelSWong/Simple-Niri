@@ -1,0 +1,17 @@
+font-family = MesloLGS Nerd Font Mono
+font-style = Regular
+font-size = 13 
+theme = Monokai Pro 
+
+# keybindings
+keybind = ctrl+r=reload_config
+
+# split
+
+keybind =ctrl+s>5=new_split:right
+keybind =ctrl+s>'=new_split:down
+
+keybind = ctrl+alt+h=goto_split:left
+keybind = ctrl+alt+j=goto_split:down
+keybind = ctrl+alt+k=goto_split:up
+keybind = ctrl+alt+l=goto_split:right

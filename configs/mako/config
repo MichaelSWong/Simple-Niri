@@ -1,0 +1,15 @@
+# Global settings
+max-history=10
+default-timeout=5000
+max-visible=5
+
+# Styling
+font=sans-serif 10
+background-color=#282c34
+text-color=#abb2bf
+border-color=#61afef
+width=300
+padding=10
+
+# Bindings
+on-button-left=dismiss
