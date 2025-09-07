@@ -24,7 +24,7 @@ check_os
 run_script "prerequisites.sh" "Prerequisites Setup"
 run_script "niri.sh" "Niri & Critical Softwares Setup"
 run_script "utilities.sh" "Basic Utilities & Configs Setup"
-run_script "gaming.sh" "Gaming Setup"
+run_script "game.sh" "Gaming Setup"
 run_script "final.sh" "Final Setup"
 
 print_bold_blue "\n🌟 Setup Complete\n"
