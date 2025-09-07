@@ -10,7 +10,7 @@ log_message "Installation started for niri section"
 print_info "\nStarting niri setup..."
 print_info "\nEverything is recommended to INSTALL"
 
-run_command "pacman -S --noconfirm niri" "Install Hyprland (Must)" "yes"
+run_command "pacman -S --noconfirm niri" "Install Niri (Must)" "yes"
 run_command "mkdir -p /home/$SUDO_USER/.config/ && cp -r /home/$SUDO_USER/simple-niri/configs/niri /home/$SUDO_USER/.config/ && chown -R $SUDO_USER:$SUDO_USER /home/$SUDO_USER/.config" "Copy niri config (Must)" "yes" "no"
 
 run_command "pacman -S --noconfirm xdg-desktop-portal-gtk" "Install XDG desktop portal for Niri" "yes"
