@@ -29,6 +29,8 @@ run_command "cp -r $BASE_DIR/configs/yazi /home/$SUDO_USER/.config/" "Copy yazi 
 
 run_command "pacman -S --noconfirm unzip" "Install Unzip (Must)" "yes" "no"
 
+run_command "pacman -S --noconfirm fastfetch" "Install fastfetch" "yes" "no"
+
 run_command "pacman -S --noconfirm starship" "Install Starship" "yes" "no"
 run_command "cp -r $BASE_DIR/configs/starship.toml /home/$SUDO_USER/.config/" "Copy starship config" "yes" "no"
 
