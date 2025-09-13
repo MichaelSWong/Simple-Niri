@@ -19,19 +19,19 @@ run_command "cp -r $BASE_DIR/configs/nvim /home/$SUDO_USER/.config/" "Copy nvim 
 
 run_command "pacman -S --noconfirm cliphist" "Install Cliphist - Clipboard Manager" "yes"
 
-run_command "pacman -S --noconfirm swww" "Install SWWW for wallpaper management" "yes" "no"
+run_command "pacman -S --noconfirm swww" "Install SWWW for wallpaper management" "yes"
 run_command "mkdir -p /home/$SUDO_USER/.config/assets/backgrounds && cp -r $BASE_DIR/assets/backgrounds /home/$SUDO_USER/.config/assets/ && chown -R $SUDO_USER:$SUDO_USER /home/$SUDO_USER/.config/assets/" "Copy sample wallpapers to assets directory (Recommended)" "yes" "no"
 
-run_command "pacman -S --noconfirm swaylock swayidle" "Install Swaylock + SwayIdle - Screen Locker (Must)" "yes" "no"
+run_command "pacman -S --noconfirm swaylock swayidle" "Install Swaylock + SwayIdle - Screen Locker (Must)" "yes"
 
 run_command "pacman -S --noconfirm yazi ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick"
 run_command "cp -r $BASE_DIR/configs/yazi /home/$SUDO_USER/.config/" "Copy yazi config" "yes" "no"
 
-run_command "pacman -S --noconfirm unzip" "Install Unzip (Must)" "yes" "no"
+run_command "pacman -S --noconfirm unzip" "Install Unzip (Must)" "yes"
 
-run_command "pacman -S --noconfirm fastfetch" "Install fastfetch" "yes" "no"
+run_command "pacman -S --noconfirm fastfetch" "Install fastfetch" "yes"
 
-run_command "pacman -S --noconfirm starship" "Install Starship" "yes" "no"
+run_command "pacman -S --noconfirm starship" "Install Starship" "yes"
 run_command "cp -r $BASE_DIR/configs/starship.toml /home/$SUDO_USER/.config/" "Copy starship config" "yes" "no"
 
 run_command "yay -S --sudoloop --noconfirm fnm" "Install fnm" "yes" "no"
