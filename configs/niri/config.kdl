@@ -206,9 +206,12 @@ binds {
     spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1" "&" // Polkit
     spawn-at-startup "xwayland-satellite" // XWayland support
     spawn-at-startup "swww-daemon" // Wallpaper daemon
-    spawn-at-startup "swww img" "/usr/share/wallpapers/cachyos-wallpapers/Skyscraper.png" // Set wallpaper
     spawn-at-startup "waybar" // Launch waybar
     spawn-at-startup "swayidle" "-w" "timeout" "601" "niri msg action power-off-monitors" "timeout" "600" "swaylock -f" "before-sleep" "swaylock -f"
+    // spawn-at-startup "sleep 1 && swww img --outputs eDP-1 /.config/assets/backgrounds/samurai-no-goal.png" // Set wallpaper
+    // spawn-at-startup "sleep 1 && swww img --outputs DP-2 ~/.config/assets/backgrounds/samurai-dojo.png" // Set wallpaper
+    // spawn-at-startup "sleep 1 && swww img --outputs DP-3 ~/.config/assets/backgrounds/japanese-scene.jpeg" // Set wallpaper
+    spawn-sh-at-startup "sleep 1 && swww img --outputs eDP-1 ~/.config/assets/backgrounds/samurai-no-goal.png && swww img --outputs DP-2 ~/.config/assets/backgrounds/samurai-dojo.png && swww img --outputs DP-3 ~/.config/assets/backgrounds/japanese-scene.jpeg"
 
     prefer-no-csd // Disable program decorations
    
