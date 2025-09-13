@@ -17,6 +17,8 @@ run_command "pacman -S --noconfirm xdg-desktop-portal-gtk" "Install XDG desktop 
 
 run_command "pacman -S --noconfirm xwayland-satellite" "Install Xwayland Satellite for Niri" "yes"
 
+run_command "pacman -S --noconfirm keepassxc" "Install Keepassxc for Passwords" "yes"
+
 run_command "pacman -S --noconfirm polkit-kde-agent" "Install KDE Polkit agent for authentication dialogs" "yes"
 
 run_command "pacman -S --noconfirm mako" "Install mako notification daemon" "yes"
