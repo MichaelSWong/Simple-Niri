@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Get the directory of the current script
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+BASE_DIR=$(realpath "$(dirname "${BASH_SOURCE[0]}")/../../")
 
 # Source helper file
-source $SCRIPT_DIR/helper.sh
+source $BASE_DIR/scripts/installer/helper.sh
 
 # Trap for unexpected exits
 trap 'trap_message' INT TERM
