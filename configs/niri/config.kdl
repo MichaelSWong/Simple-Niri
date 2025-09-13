@@ -35,7 +35,7 @@ input {
     focus-at-startup
 }
 
-/= output "eDP-1" {
+/- output "eDP-1" {
     mode "2560x1440@165.001"
     scale 1.5
     transform "normal"
