@@ -1,9 +1,10 @@
 #!/bin/bash
+
 # Get the directory of the current script
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+BASE_DIR=$(realpath "$(dirname "${BASH_SOURCE[0]}")/../../")
 
 # Source helper file
-source $SCRIPT_DIR/helper.sh
+source $BASE_DIR/scripts/installer/helper.sh
 
 log_message "Installation started for prerequisites section"
 print_info "\nStarting prerequisites setup..."
@@ -23,6 +24,6 @@ run_command "pacman -S --noconfirm sddm && systemctl enable sddm.service" "Insta
 run_command "yay -S --sudoloop --noconfirm zen-browser-bin" "Install Zen Browser" "yes" "no" 
 
 run_command "pacman -S --noconfirm ghostty" "Install Ghostty (Recommended)" "yes"
-run_command "cp -r /home/$SUDO_USER/simple-niri/configs/ghostty /home/$SUDO_USER/.config/" "Copy ghostty config" "yes" "no"
+run_command "cp -r $BASE_DIR/configs/ghostty /home/$SUDO_USER/.config/" "Copy ghostty config" "yes" "no"
 
 echo "------------------------------------------------------------------------"
