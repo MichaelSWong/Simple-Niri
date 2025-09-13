@@ -26,14 +26,40 @@ input {
 // You will have to remove "/-" and edit it before it takes effect.
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 
-output "DP-3" {
+// Laptop Monitors
+/- output "DP-2" {
+    mode "3440x1440@120.000"
+    scale 1
+    transform "normal"
+    position x=1707 y=0
+    focus-at-startup
+}
+
+/= output "eDP-1" {
+    mode "2560x1440@165.001"
+    scale 1.5
+    transform "normal"
+    position x=0 y=720
+    focus-at-startup
+}
+
+/- output "DP-3" {
+    mode "1980x1080@143.855"
+    scale 1
+    transform "normal"
+    position x=5147 y=360
+}
+
+
+// PC Monitors
+/- output "DP-3" {
   mode "3440x1440@143.923"
   scale 1
   position x=0 y=0
   focus-at-startup
 }
 
-output "DP-2" {
+/- output "DP-2" {
   mode "1920x1080@143.855"
   scale 1
   position x=3440 y=0
