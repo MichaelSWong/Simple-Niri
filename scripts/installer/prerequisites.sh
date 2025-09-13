@@ -16,7 +16,7 @@ if run_command "pacman -S --noconfirm --needed git base-devel" "Install YAY (Mus
 fi
 run_command "pacman -S --noconfirm pipewire pipewire-jack pipewire-alsa pipewire-pulse wireplumber brightnessctl" "Configuring audio and brightness (Recommended)" "yes"
 
-run_command "pacman -S --noconfirm ttf-meslo-nerd ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono" "Installing Nerd Fonts and Symbols (Recommended)" "yes" 
+run_command "pacman -S --noconfirm adobe-source-han-sans-jp-fonts ttf-meslo-nerd ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono" "Installing Nerd Fonts and Symbols (Recommended)" "yes" 
 
 run_command "pacman -S --noconfirm sddm && systemctl enable sddm.service" "Install and enable SDDM (Recommended)" "yes"
 
