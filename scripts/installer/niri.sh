@@ -11,7 +11,7 @@ print_info "\nStarting niri setup..."
 print_info "\nEverything is recommended to INSTALL"
 
 run_command "pacman -S --noconfirm niri xdg-desktop-portal-gtk" "Install Niri (Must)" "yes"
-run_command "cp -r $BASE_DIR/configs/niri $BASE_DIR/.config/ && chown -R $SUDO_USER:$SUDO_USER /home/$SUDO_USER/.config" "Copy niri config (Must)" "yes" "no"
+run_command "cp -r $BASE_DIR/configs/niri /home/$SUDO_USER/.config/ && chown -R $SUDO_USER:$SUDO_USER /home/$SUDO_USER/.config" "Copy niri config (Must)" "yes" "no"
 
 run_command "pacman -S --noconfirm xwayland-satellite" "Install Xwayland Satellite for Niri" "yes"
 
